@@ -7,10 +7,25 @@ const order = Order;
 Given('I am on the dashboard', async () => {
 });
 
-When('I click analytic', async() => {
-    await Order.analytic.click();
-    await browser.pause(5000);
+When('I click order', async() => {
+    await Order.order.scrollIntoView();
+    await Order.order.click();
+    await browser.pause(3000);
+        });
     
+When('I click penjualan', async() => {
+    await Order.penjualan.scrollIntoView();
+    await Order.penjualan.click();
+    await browser.pause(3000);
+        });        
 
-    // await Login.loginWithGoogleButton.click();
-    });
+When('I click button add', async() => {
+    await Order.buttonAdd.isClickable;
+    await Order.buttonAdd.click();
+    await browser.pause(3000);
+        });
+        
+When('I click marketplace', async() => {
+    await Order.marketplace.click();
+    await browser.pause(3000);
+        });  

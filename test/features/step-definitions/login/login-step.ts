@@ -27,7 +27,7 @@ When('I login with credential', async() => {
                 const error = e as Error; 
                 console.error('Error clicking button:', error.message);
 
-                await new Promise(resolve => setTimeout(resolve, 1500)); 
+                await new Promise(resolve => setTimeout(resolve, 7000)); 
 
                 maxAttempts--;
                 if (maxAttempts === 0) {
