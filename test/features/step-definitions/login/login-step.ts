@@ -1,7 +1,7 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import login from '../../page-objects/login//login-page';
+import Login from '../../page-objects/login//login-page';
 
-const Login = login;
+const login = Login;
 
 
 Given('I send login url', async () => {

@@ -1,7 +1,6 @@
-Feature: login Feature
+Feature: Login
 
-  Scenario: As a user, I can login into superapp dashboard
-  
+  Scenario: As a user, I want to login to superapp dashboard
     Given I send login url
     When I login with credential
     Then I see usernameDisplay

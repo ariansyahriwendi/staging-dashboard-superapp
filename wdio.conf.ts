@@ -1,37 +1,17 @@
 import type { Options } from '@wdio/types'
 export const config: Options.Testrunner = {
-    //
-    // ====================
-    // Runner Configuration
-    // ====================
-    // WebdriverIO supports running e2e tests as well as unit and component tests.
+
     runner: 'local',
     tsConfigPath: './tsconfig.json',
     
-    //
-    // ==================
-    // Specify Test Files
-    // ==================
-    // Define which test specs should run. The pattern is relative to the directory
-    // of the configuration file being run.
-    //
-    // The specs are defined as an array of spec files (optionally using wildcards
-    // that will be expanded). The test for each spec file will be run in a separate
-    // worker process. In order to have a group of spec files run in the same worker
-    // process simply enclose them in an array within the specs array.
-    //
-    // The path of the spec files will be resolved relative from the directory of
-    // of the config file unless it's absolute.
-    //
     specs: [
         './features/base/hooks.ts',
         'test/features/bdd/**/*.feature'
+        
         //'./features/**/*.feature'
         // 'test/features/step-definitions/login.feature'
     ],
-    // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
     ],
     //
     // ============
@@ -116,27 +96,13 @@ export const config: Options.Testrunner = {
     // before running any tests.
     framework: 'cucumber',
     
-    //
-    // The number of times to retry the entire specfile when it fails as a whole
-    // specFileRetries: 1,
-    //
-    // Delay in seconds between the spec file retry attempts
-    // specFileRetriesDelay: 0,
-    //
-    // Whether or not retried spec files should be retried immediately or deferred to the end of the queue
-    // specFileRetriesDeferred: false,
-    //
-    // Test reporter for stdout.
-    // The only one supported by default is 'dot'
-    // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
 
-    // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
-        // <string[]> (file/dir) require files before executing features
+
         require: ['test/features/base/hooks.ts', 'test/features/step-definitions/**/*.ts'],
-        //['test/features/step-definitions/loginStep.ts'], //['./features/step-definitions/*.ts'],
-        // <boolean> show full backtrace for errors
+
+        
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         requireModule: [],
