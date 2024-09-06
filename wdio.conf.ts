@@ -24,8 +24,10 @@ export const config: Options.Testrunner = {
     // of the config file unless it's absolute.
     //
     specs: [
+        './features/base/hooks.ts',
+        'test/features/bdd/**/*.feature'
         //'./features/**/*.feature'
-        'test/features/step-definitions/login.feature'
+        // 'test/features/step-definitions/login.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -132,7 +134,8 @@ export const config: Options.Testrunner = {
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
-        require: ['test/features/step-definitions/loginStep.ts'], //['./features/step-definitions/*.ts'],
+        require: ['test/features/base/hooks.ts', 'test/features/step-definitions/**/*.ts'],
+        //['test/features/step-definitions/loginStep.ts'], //['./features/step-definitions/*.ts'],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
@@ -155,6 +158,14 @@ export const config: Options.Testrunner = {
         timeout: 60000,
         // <boolean> Enable this config to treat undefined definitions as warnings.
         ignoreUndefinedDefinitions: false
+    },
+
+    before: function () {
+        console.log('Starting tests...');
+    },
+
+    after: function () {
+        console.log('Tests finished.');
     },
 
 
