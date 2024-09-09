@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//input[@class=\"ant-input ant-input-sm css-1vp3ixv\"]"
+}

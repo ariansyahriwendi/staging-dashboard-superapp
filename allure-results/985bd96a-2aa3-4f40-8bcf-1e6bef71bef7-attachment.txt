@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@title=\"S9430NG\"]"
+}

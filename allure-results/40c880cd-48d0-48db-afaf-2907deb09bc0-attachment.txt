@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@class=\"ModalIllustration_modalDefaultFooter___8umW\"]/*[1]"
+}

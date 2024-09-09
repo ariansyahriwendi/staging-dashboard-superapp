@@ -5,17 +5,13 @@ const login = Login;
 
 
 Given('I send login url', async () => {
-    // await browser.url('http://v3-web-app-micro.staging.superapp.co.id/auth/login');
-    // await browser.maximizeWindow();
-    // //screenshoot opened login page
-    // await browser.takeScreenshot();
 
 });
 
 When('I login with credential', async() => {
     
     let btnlog = false;
-        let maxAttempts = 0;
+        let maxAttempts = 1;
 
         do {
             try {
@@ -33,7 +29,7 @@ When('I login with credential', async() => {
                 if (maxAttempts === 0) {
                     console.error('Maximum attempts reached. Reloading the page.');
                     await browser.refresh();
-                    maxAttempts = 0;
+                    maxAttempts = 1;
                 }
             }
         } while (!btnlog);
@@ -72,6 +68,8 @@ When('I login with credential', async() => {
 
 // Input password
         await Login.passwordInput.setValue('passwordsuperapp');
+
+// Click next        
         await Login.nextButton.click();
         await browser.pause(3000);
 
@@ -86,3 +84,42 @@ Then('I see usernameDisplay', async() => {
     console.log(title);
 })
 
+Given('I am on the dashboard', async () => {
+});
+
+Given('I am on the dashboard v4', async () => {
+    await browser.url('https://v3-web-app-micro.staging.superapp.co.id/dashboard');
+    // await browser.url('https://v3-web-app-micro.staging.superapp.co.id/logistic/outgoing-goods-v4/detail?vendor_pic_id=499&name=Mobil%20tamia%20&type=2&warehouse_id=1&period=today&group_type=grosir&search=T240909-187&page=1&customer=-1&driver=-1&plate_number=-1&status=all')
+    await browser.pause(3000);
+});
+
+When('I login with keys', async() => {
+    
+                await Login.loginWithGoogleButton.click();
+                // await browser.pause(3000);
+
+                const parentHandle = await browser.getWindowHandle();
+        const childHandles = await browser.getWindowHandles();
+
+        for (const handle of childHandles) {
+            if (handle !== parentHandle) {
+                await browser.switchToWindow(handle);
+                console.log(`Switched to window with title: ${await browser.getTitle()}`);
+                break;
+            }
+        }
+
+                await browser.keys(['mariansyah.riwendi@nusantara.technology']);
+                await browser.keys(['Meta', 'Enter']);
+
+                await browser.pause(2000);
+
+                await browser.keys('passwordsuperapp');
+                await browser.keys(['Meta', 'Enter']);
+
+                await browser.switchToWindow(parentHandle);
+
+                await browser.pause(13000);
+
+
+        })

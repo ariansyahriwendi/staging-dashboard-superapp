@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//span[@class=\"ant-menu-title-content\"]/a[@data-testid=\"Menu-NewOutgoing Goods\"]"
+}

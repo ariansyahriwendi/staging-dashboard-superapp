@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@class=\"ant-select-selector\"]/*[2][contains(text(), \"Pilih driver\")]"
+}

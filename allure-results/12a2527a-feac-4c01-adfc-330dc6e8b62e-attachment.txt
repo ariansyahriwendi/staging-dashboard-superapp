@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//tbody[@class=\"ant-table-tbody\"]/*[2]/*[4]/*/span"
+}

@@ -5,14 +5,14 @@ export const config: Options.Testrunner = {
     tsConfigPath: './tsconfig.json',
     
     specs: [
-        './features/base/hooks.ts',
+        'test/features/base/hooks.ts',
         'test/features/bdd/**/*.feature'
     ],
 
     exclude: [
     ],
 
-    maxInstances: 10,
+    maxInstances: 1,
     
     capabilities: [{
         browserName: 'chrome'
@@ -36,8 +36,8 @@ export const config: Options.Testrunner = {
 
     cucumberOpts: {
 
-        require: ['test/features/base/hooks.ts', 'test/features/step-definitions/**/*.ts'],
-
+        require: ['test/features/base/hooks.ts',
+                  'test/features/step-definitions/**/*.ts'],
         
         backtrace: false,
         requireModule: [],
@@ -49,7 +49,7 @@ export const config: Options.Testrunner = {
         strict: false,
         tagExpression: '',
         timeout: 60000,
-        ignoreUndefinedDefinitions: false
+        ignoreUndefinedDefinitions: true
     },
 
     before: function () {

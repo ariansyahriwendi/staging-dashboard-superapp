@@ -1,0 +1,327 @@
+{
+  "actions": [
+    {
+      "id": "action1",
+      "type": "key",
+      "parameters": {},
+      "actions": [
+        {
+          "type": "keyDown",
+          "value": "m"
+        },
+        {
+          "type": "keyDown",
+          "value": "a"
+        },
+        {
+          "type": "keyDown",
+          "value": "r"
+        },
+        {
+          "type": "keyDown",
+          "value": "i"
+        },
+        {
+          "type": "keyDown",
+          "value": "a"
+        },
+        {
+          "type": "keyDown",
+          "value": "n"
+        },
+        {
+          "type": "keyDown",
+          "value": "s"
+        },
+        {
+          "type": "keyDown",
+          "value": "y"
+        },
+        {
+          "type": "keyDown",
+          "value": "a"
+        },
+        {
+          "type": "keyDown",
+          "value": "h"
+        },
+        {
+          "type": "keyDown",
+          "value": "."
+        },
+        {
+          "type": "keyDown",
+          "value": "r"
+        },
+        {
+          "type": "keyDown",
+          "value": "i"
+        },
+        {
+          "type": "keyDown",
+          "value": "w"
+        },
+        {
+          "type": "keyDown",
+          "value": "e"
+        },
+        {
+          "type": "keyDown",
+          "value": "n"
+        },
+        {
+          "type": "keyDown",
+          "value": "d"
+        },
+        {
+          "type": "keyDown",
+          "value": "i"
+        },
+        {
+          "type": "keyDown",
+          "value": "@"
+        },
+        {
+          "type": "keyDown",
+          "value": "n"
+        },
+        {
+          "type": "keyDown",
+          "value": "u"
+        },
+        {
+          "type": "keyDown",
+          "value": "s"
+        },
+        {
+          "type": "keyDown",
+          "value": "a"
+        },
+        {
+          "type": "keyDown",
+          "value": "n"
+        },
+        {
+          "type": "keyDown",
+          "value": "t"
+        },
+        {
+          "type": "keyDown",
+          "value": "a"
+        },
+        {
+          "type": "keyDown",
+          "value": "r"
+        },
+        {
+          "type": "keyDown",
+          "value": "a"
+        },
+        {
+          "type": "keyDown",
+          "value": "."
+        },
+        {
+          "type": "keyDown",
+          "value": "t"
+        },
+        {
+          "type": "keyDown",
+          "value": "e"
+        },
+        {
+          "type": "keyDown",
+          "value": "c"
+        },
+        {
+          "type": "keyDown",
+          "value": "h"
+        },
+        {
+          "type": "keyDown",
+          "value": "n"
+        },
+        {
+          "type": "keyDown",
+          "value": "o"
+        },
+        {
+          "type": "keyDown",
+          "value": "l"
+        },
+        {
+          "type": "keyDown",
+          "value": "o"
+        },
+        {
+          "type": "keyDown",
+          "value": "g"
+        },
+        {
+          "type": "keyDown",
+          "value": "y"
+        },
+        {
+          "type": "pause",
+          "duration": 10
+        },
+        {
+          "type": "keyUp",
+          "value": "m"
+        },
+        {
+          "type": "keyUp",
+          "value": "a"
+        },
+        {
+          "type": "keyUp",
+          "value": "r"
+        },
+        {
+          "type": "keyUp",
+          "value": "i"
+        },
+        {
+          "type": "keyUp",
+          "value": "a"
+        },
+        {
+          "type": "keyUp",
+          "value": "n"
+        },
+        {
+          "type": "keyUp",
+          "value": "s"
+        },
+        {
+          "type": "keyUp",
+          "value": "y"
+        },
+        {
+          "type": "keyUp",
+          "value": "a"
+        },
+        {
+          "type": "keyUp",
+          "value": "h"
+        },
+        {
+          "type": "keyUp",
+          "value": "."
+        },
+        {
+          "type": "keyUp",
+          "value": "r"
+        },
+        {
+          "type": "keyUp",
+          "value": "i"
+        },
+        {
+          "type": "keyUp",
+          "value": "w"
+        },
+        {
+          "type": "keyUp",
+          "value": "e"
+        },
+        {
+          "type": "keyUp",
+          "value": "n"
+        },
+        {
+          "type": "keyUp",
+          "value": "d"
+        },
+        {
+          "type": "keyUp",
+          "value": "i"
+        },
+        {
+          "type": "keyUp",
+          "value": "@"
+        },
+        {
+          "type": "keyUp",
+          "value": "n"
+        },
+        {
+          "type": "keyUp",
+          "value": "u"
+        },
+        {
+          "type": "keyUp",
+          "value": "s"
+        },
+        {
+          "type": "keyUp",
+          "value": "a"
+        },
+        {
+          "type": "keyUp",
+          "value": "n"
+        },
+        {
+          "type": "keyUp",
+          "value": "t"
+        },
+        {
+          "type": "keyUp",
+          "value": "a"
+        },
+        {
+          "type": "keyUp",
+          "value": "r"
+        },
+        {
+          "type": "keyUp",
+          "value": "a"
+        },
+        {
+          "type": "keyUp",
+          "value": "."
+        },
+        {
+          "type": "keyUp",
+          "value": "t"
+        },
+        {
+          "type": "keyUp",
+          "value": "e"
+        },
+        {
+          "type": "keyUp",
+          "value": "c"
+        },
+        {
+          "type": "keyUp",
+          "value": "h"
+        },
+        {
+          "type": "keyUp",
+          "value": "n"
+        },
+        {
+          "type": "keyUp",
+          "value": "o"
+        },
+        {
+          "type": "keyUp",
+          "value": "l"
+        },
+        {
+          "type": "keyUp",
+          "value": "o"
+        },
+        {
+          "type": "keyUp",
+          "value": "g"
+        },
+        {
+          "type": "keyUp",
+          "value": "y"
+        }
+      ]
+    }
+  ]
+}

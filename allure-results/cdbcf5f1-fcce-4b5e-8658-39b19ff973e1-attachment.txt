@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//tr[@data-row-key=\"1435418983\"]/*[2]/*"
+}

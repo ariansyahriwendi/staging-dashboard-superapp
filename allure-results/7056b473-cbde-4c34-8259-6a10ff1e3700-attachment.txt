@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//button[@class=\"ant-btn ant-btn-default ant-btn-lg btn\"]/*[contains(text(), \"Tambah Produk\")]"
+}

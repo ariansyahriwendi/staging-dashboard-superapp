@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//span[@class=\"ant-checkbox\"]/*[@data-id=\"checkbox-0\"]"
+}
